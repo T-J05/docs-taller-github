@@ -22,7 +22,7 @@ Este instructivo explica cómo **configurar una clave SSH** para conectarse a Gi
 # 🪟 WINDOWS
 
 > Recomendado: **Windows 10 o 11**
-> Alternativa para Windows viejos: **Git Bash** (incluido en Git for Windows)
+> Alternativa para Windows viejos: **Git Bash** (incluido en Git for Windows) Usar Git Bash si PowerShell falla o tienen Windows 7/8
 
 ---
 
@@ -51,7 +51,7 @@ Esto crea **dos archivos**:
 ### 2️⃣ Copiar la clave pública
 
 ```powershell
-type ~/.ssh/id_ed25519.pub
+type $env:USERPROFILE\.ssh\id_ed25519.pub
 ```
 
 Copiá **todo el texto que aparece**, desde `ssh-ed25519` hasta el correo.
